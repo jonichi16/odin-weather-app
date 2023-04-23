@@ -1,4 +1,5 @@
 import './stylesheets/reset.css';
+import './stylesheets/styles.css';
 import render from './javascript/components/dom';
 import header from './javascript/components/header';
 

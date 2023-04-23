@@ -1,0 +1,25 @@
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-logo: 'Pacifico', cursive;
+  --font-display: 'Share Tech Mono', monospace;
+
+  --color-primary: #2c3950;
+  --color-secondary: #f7d5b1;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+}
+
+.header {
+  width: min(90%, 800px);
+  margin-inline: auto;
+  padding: 1em 0;
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-size: 2rem;
+}
