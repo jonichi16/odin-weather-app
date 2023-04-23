@@ -44,5 +44,9 @@ searcButton.addEventListener('click', (e) => {
 
   displayWeather();
 
+  const loading = document.createElement('div');
+  loading.classList.add('loading');
+  main.displayMain(loading);
+
   searchInput.value = '';
 });
