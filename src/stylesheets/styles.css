@@ -35,6 +35,8 @@ body {
   width: min(90%, 800px);
   margin-inline: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -68,6 +70,40 @@ body {
 
 .search-btn:active {
   transform: scale(0.9);
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+
+.city {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.temp {
+  font-size: 5rem;
+}
+
+.icon {
+  width: 80px;
+  margin-top: 1em;
+}
+
+.temp::after {
+  content: '°';
+}
+
+.error {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .footer {
