@@ -8,7 +8,7 @@ const temperature = document.createElement('p');
 temperature.classList.add('temp');
 
 const createWeatherCard = (container, weather) => {
-  city.textContent = weather.location.name;
+  city.textContent = `${weather.location.name}, ${weather.location.country}`;
   condition.textContent = weather.current.condition.text;
   icon.src = weather.current.condition.icon;
   temperature.textContent = weather.current.temp_c;
