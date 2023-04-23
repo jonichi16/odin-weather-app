@@ -16,9 +16,13 @@ const children = [
 ];
 render(content, children);
 
-const searchInput = document.querySelector('.search-input');
-const searcButton = document.querySelector('.search-btn');
+// Home button
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', () => {
+  main.displayMain(form.createForm());
+});
 
+const searchInput = document.querySelector('.search-input');
 const displayWeather = async () => {
   const container = document.createElement('div');
 
@@ -34,6 +38,7 @@ const displayWeather = async () => {
   main.displayMain(container);
 };
 
+const searcButton = document.querySelector('.search-btn');
 searcButton.addEventListener('click', (e) => {
   e.preventDefault();
 
